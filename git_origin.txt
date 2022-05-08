@@ -1,7 +1,11 @@
-hello
+
 
 git init
 git add file_name
 git commit -m "mesage"
 git remote add origin https://github.com/saiyugandharsingamaneni/git_pro.git
 git push -u origin branch_name
+ls or ls -a
+git status
+git remote
+git branch
