@@ -1,11 +1,153 @@
+Git is version controller tool.
+1)local [ refers to local computer]  2)remote [refers to public or private server]
+
+1)Local - It is our computer which we can use and make changes locally.
+2)Remote - It is server which we connect and update the latest work accorndingly.
+
+1.git init - inistiliazation of git in our local
+
+Working area- It is where we change and update the files.
+It has 2 areas 
+1) Untracked - File which is not modified
+2) Modified - File which is modified recently.
+
+2.git add file_name
+
+stagging area- It is added with file name moved from working area to stagging area.
+
+Before going to commit we need to configure the name and email id for authorization.
+
+3.git config user.name "sai"  
+4.git config user.email "sai_yugandhar_@github.in"
+
+5.git commit -m "mesage"
+
+Commited files- when we commit the file with message.It will store a current copy of file or entire file in a .git folder.
+It movies the file from stagging area to commited files.
+
+6.git log 
+
+It gives commit hash, author name and date&time.
+
+7.git branch 
+To check all the branches. branches are nothing but pointers to commit changes.
+
+8.git branch branch_name.
+To create new branch.
+
+10.git checkout branch_name
+To change to different branch when want to go and commit in another branch. 
+
+9.git checkout -b branch_name
+To create new brach and switch to it.
+
+10.git checkout -d branch_name
+To delete the exsiting branch
+
+11.git merge branch_name
+We can merge the branch with master and before merging the branch we need to check out to master.
+There are two types
+1) Fast-forward - It's better to have current branch(master) no commits , it is lazy and rather new branch doesn't have commit but commits after 
+we merge with master.Since master branch doesn't have any extra commits we can merge directly to master.so we use fast-forward.
+2) no-fast-forward- it's better to have current branch (master) has commits,new branch doesn't have commit but commits after 
+we merge with master.Since master branch have a commit when we merge git will create new merging commit.so we use no-fast-forward.
+
+Thera are several platforms we can use the remote repositories like git_hub, git_lab, bitbucket.Once we get access to connection
+we get a url known as connection_string.
+
+Connection_string: it is used in order to connect and use node where the git repository is located.  
+
+12.git remote add origin https://github.com/sai/git_pro.git
+The above command it used to connect the local repository with the remote repository.
+
+13.git remote -v
+It is used to list out all our remote repositories.
+
+14.git push -u origin branch_name  [origin means Alias, branch_name default has master] 
+The above command it is used to in order to keep our local and remote repositories in sync.Any one can fetch the latest change
+we done to files in repository from the remote repository.
+
+15.git clone
+To clone the remote repository to local.
+
+pull request: When we push the changes from local to remote repository to branch which is different from masters where pull
+request comes up saying it is behind the master and we can accept the pull request by accepting the request and we can add additional
+messsage to it before acceting the pull request and merges with master branch.
+
+In local branch it is not aware the branch and master is merged. In local repository it need to be updated by using fetch command.
+
+Fetching: Here we are fetching the changes done in remote repository to local.
+
+One we fetch the remote master to local it will get updated as per sync BY giving below command.
+16.git merge origin/master
+
+17.git pull origin master
+Insted of fetching and merging we can also use git pull command which will do both command.
+
+Fork: It is use the clone other remote repository to ours and locally we can change or improve the project and send the pull request
+with out impacting the original project and they can see the changes we had made.
+
+18.git status
+
+19.git rebase master
+
+Rebase:Rebase is one of two Git utilities that specializes in integrating changes from one branch onto another. 
+The other change integration utility is git merge. Merge is always a forward moving change record. Alternatively, 
+rebase has powerful history rewriting features
+
+Rebase command creates the branch on top of the master brach and we need to merge master with the rebase branch.
+Rebase is powerfull ro rewrite git history.
+To enter and use commands to rewrite use: git rebase -i 
+Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# . create a merge commit using the original merge commit's
+# . message (or the oneline, if no original merge commit was
+# . specified). Use -c <commit> to reword the commit message.
+
+							
+link: https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+
+20.git cherry-pick hash_code
+
+Cherry picking: In case we want one branch commits certain commits, not all applied to another branch or master. 
+we can use cherry-pick command and use the hash code of the commit to add those changes to master or another branch.
+
+21.git revert hash_code
+
+It is used to revert the changes or undo the commit and keep those changes in our git history
+
+22.git reset --soft HEAD~1 or git reset --hard HEAD~1
+
+Reset: It will also consider how many commits we want to reset.
+there two types of resets
+1)soft reset-It will undone the no of changes we gave and since we use soft reset we still have the access to the changes
+we committed previously.
+2)hard reset-It will undone the no of changes we gave and since we use hard reset we do not have the access to 
+the changes we committed previously.
+
+23.git stash
+
+when we are working in local repository and we are not done to commit changes, then we can add file.we comes to stagging area
+after that insted of committed files we can git stash it so it will update to remote repository has stash are where the changes can be seen 
+with out commiting the file.
+
+24.git stash pop
+
+where the file can be pulled back from stash area to stagging area.
 
 
-git init
-git add file_name
-git commit -m "mesage"
-git remote add origin https://github.com/saiyugandharsingamaneni/git_pro.git
-git push -u origin branch_name
-ls or ls -a
-git status
-git remote
-git branch
+
+git reset --hard git log id
+
+
+#testing
