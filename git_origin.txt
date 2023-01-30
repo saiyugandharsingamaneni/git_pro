@@ -197,4 +197,5 @@ what is github actions?
 what is git stach?
 
 what is git cherrypick?
- 
+
+Linux
