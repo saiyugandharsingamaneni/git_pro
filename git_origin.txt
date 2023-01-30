@@ -192,4 +192,10 @@ what is difference between force commit and normal commit?
 
 how to check history of git log?
 
- 
+what is github actions?
+
+what is git stach?
+
+what is git cherrypick?
+
+Linux
