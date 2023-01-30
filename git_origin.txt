@@ -98,6 +98,11 @@ rebase has powerful history rewriting features
 Rebase command creates the branch on top of the master brach and we need to merge master with the rebase branch.
 Rebase is powerfull ro rewrite git history.
 To enter and use commands to rewrite use: git rebase -i 
+
+20.git reset --hard git_log_id
+
+It is used to reverse the changes commited by giving previous log in only local machine.if we want to revert change in central repository we need to commit changes.
+
 Commands:
 # p, pick <commit> = use commit
 # r, reword <commit> = use commit, but edit the commit message
@@ -117,16 +122,16 @@ Commands:
 							
 link: https://git-scm.com/book/en/v2/Git-Branching-Rebasing
 
-20.git cherry-pick hash_code
+21.git cherry-pick hash_code
 
 Cherry picking: In case we want one branch commits certain commits, not all applied to another branch or master. 
 we can use cherry-pick command and use the hash code of the commit to add those changes to master or another branch.
 
-21.git revert hash_code
+22.git revert hash_code
 
 It is used to revert the changes or undo the commit and keep those changes in our git history
 
-22.git reset --soft HEAD~1 or git reset --hard HEAD~1
+23.git reset --soft HEAD~1 or git reset --hard HEAD~1
 
 Reset: It will also consider how many commits we want to reset.
 there two types of resets
@@ -135,20 +140,22 @@ we committed previously.
 2)hard reset-It will undone the no of changes we gave and since we use hard reset we do not have the access to 
 the changes we committed previously.
 
-23.git stash
+24.git stash
 
 when we are working in local repository and we are not done to commit changes, then we can add file.we comes to stagging area
 after that insted of committed files we can git stash it so it will update to remote repository has stash are where the changes can be seen 
 with out commiting the file.
 
-24.git stash pop
+25.git stash pop
 
 where the file can be pulled back from stash area to stagging area.
 
 
-
 git reset --hard git log id
 
+26 git brach -d branch_name
+
+it is used to delete branch.
 
 what is git?
 
@@ -196,6 +203,4 @@ what is github actions?
 
 what is git stach?
 
-what is git cherrypick?
-
-Linux
+what is git cherrypick? 
