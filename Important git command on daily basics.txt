@@ -1,0 +1,22 @@
+Important git command on daily basics.
+
+1.git init
+2.git config
+3.git add
+4.git commit
+5.git status
+6.gitk
+7.git log
+8.git show
+9.git branch
+10.git switch
+11.git clone
+12.git checkout
+13.git merge/rebase
+14.git pull/push/fetch
+15.git remote
+16.git cherry-pick
+17.git reset
+18.git stash
+19.git tag
+20.git diff

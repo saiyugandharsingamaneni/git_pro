@@ -151,10 +151,26 @@ with out commiting the file.
 
 where the file can be pulled back from stash area to stagging area.
 
+<<<<<<< HEAD
 25 git merge branch_name.
 
 To merge this branch you should first checkout to main branch.
 
+=======
+25.git reflog
+
+It will shows all the commits merges and everything we done on repository.Even after doing hard reset we can use reflog and undone the
+changes using hash_key using hard reset.
+In git log it shows only commits.
+
+The contest in git was converted to hash SHA1 algorithm.
+
+git has  porcelain commands and plumbing commands
+
+porcelain commands are git add,status,commit,stash e.t.c..
+
+plumbing commands are git hash-object,ls-files,rev-parse,ls-remote
+>>>>>>> ce09fcc59697775a1cccc70c2d6e62f4596d5670
 
 git reset --hard git log id
 
@@ -216,5 +232,10 @@ what is github actions?
 
 what is git stach?
 
+<<<<<<< HEAD
 what is git cherrypick?
  
+=======
+what is git cherrypick? 
+
+>>>>>>> ce09fcc59697775a1cccc70c2d6e62f4596d5670
